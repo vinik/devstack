@@ -1,0 +1,10 @@
+name             'mydevstack'
+maintainer       'YOUR_NAME'
+maintainer_email 'YOUR_EMAIL'
+license          'All rights reserved'
+description      'Installs/Configures mydevstack'
+long_description 'Installs/Configures mydevstack'
+version          '0.1.0'
+
+depends 'git'
+depends 'sudo'
