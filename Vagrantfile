@@ -19,17 +19,9 @@ Vagrant.configure(2) do |config|
         v.cpus = 1
     end
 
-
     config.vm.provision "chef_solo" do |chef|
-
         chef.cookbooks_path = ['chef/cookbooks']
-
-        chef.json = {
-        }
-
-        # chef.add_recipe 'devstack::user'
         chef.add_recipe 'mydevstack'
-
     end
 
     config.vm.provision "shell" do |shell|
