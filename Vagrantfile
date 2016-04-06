@@ -4,6 +4,8 @@
 Vagrant.configure(2) do |config|
     config.vm.box = "vinik/ubuntu"
 
+    # config.vm.network "private_network", ip: "10.40.7.163"
+
     config.vm.network "forwarded_port", guest: 80, host: 8081
     config.vm.network "forwarded_port", guest: 5000, host: 5000
     config.vm.network "forwarded_port", guest: 8776, host: 8776
@@ -31,7 +33,11 @@ Vagrant.configure(2) do |config|
             "ADMIN_PASSWORD"        => "secret",
             "DATABASE_PASSWORD"     => "secret",
             "RABBIT_PASSWORD"       => "secret",
-            "SERVICE_PASSWORD"      => "secret"
+            "SERVICE_PASSWORD"      => "secret",
+            "FLOATING_RANGE"        => "192.168.1.224/27",
+            "FIXED_RANGE"           => "10.11.12.0/24",
+            "FIXED_NETWORK_SIZE"    => "256",
+            "FLAT_INTERFACE"        => "eth0"
         }
     end
 
