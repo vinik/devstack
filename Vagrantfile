@@ -37,10 +37,10 @@ Vagrant.configure(2) do |config|
             "DATABASE_PASSWORD"     => "secret",
             "RABBIT_PASSWORD"       => "secret",
             "SERVICE_PASSWORD"      => "secret",
-            "FLOATING_RANGE"        => "10.0.0.1/24",
-            "FIXED_RANGE"           => "10.40.199.0/24",
-            # "FLOATING_RANGE"        => "10.40.199.0/24",
-            # "FIXED_RANGE"           => "10.0.0.1/24",
+            # "FLOATING_RANGE"        => "10.0.0.1/24",
+            # "FIXED_RANGE"           => "10.40.199.0/24",
+            "FLOATING_RANGE"        => "10.40.199.0/24",
+            "FIXED_RANGE"           => "10.0.0.1/24",
             "FIXED_NETWORK_SIZE"    => "256",
             "FLAT_INTERFACE"        => "eth0"
         }
